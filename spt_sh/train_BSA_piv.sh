@@ -2,10 +2,6 @@
 
 # List all filenames directly
 for filename in \
-    "BSA_200mM_kcl_1_1_transferrin_BSA-transferrinEqual_Kcl_200_0003_piv_Ldp" \
-    "BSA_200mM_kcl_1_1_transferrin_BSA-transferrinEqual_Kcl_200_0006_piv_Ldp" \
-    "BSA_200mM_kcl_60mg_ml_bsa_qd_60_0001_piv_Ldp" \
-    "BSA_200mM_kcl_60mg_ml_bsa_qd_60_0006_piv_Ldp" \
     "BSA_200mM_kcl_BSA_0_2_0019_piv_Ldp" \
     "BSA_200mM_kcl_BSA_0_2_0021_piv_Ldp" \
     "BSA_200mM_kcl_bsa_qd_30_0014_piv_Ldp" \
