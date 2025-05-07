@@ -29,7 +29,7 @@ for filename in \
         --beta_photo 1.0 \
         --is_spt_pt \
         --is_train \
-        --sample_rate 0.2 \
+        --sample_rate 1.0 \
         > "output.log" 2>&1
     
     echo "Completed: $filename"
