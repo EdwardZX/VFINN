@@ -48,7 +48,7 @@ class Tracker(object):
 	"""docstring for Tracker"""
 	def __init__(self, dist_threshold, max_frame_skipped,
 				 max_trace_length = 5000, track_method = 'kalman',
-				 cost_const = 0.1):
+				 cost_const = 0.1): #default 0.1
 		super(Tracker, self).__init__()
 		self.dist_threshold = dist_threshold
 		self.max_frame_skipped = max_frame_skipped
@@ -83,8 +83,7 @@ class Tracker(object):
 
 			y_detect = detections.reshape(-1,state_dim)[:, [0, 2]]#pos
 			diff_pred = np.linalg.norm(y_pred - y_detect, axis = 1)
-			diff_raw = np.linalg.norm(y_obs - y_detect, axis=1)
-
+			diff_raw = np.linalg.norm(y_obs - y_detect, axis=1)		
 			if self.track_method == 'lap':
 				diff = np.minimum(diff_pred, diff_raw)
 			else:
@@ -141,8 +140,6 @@ class Tracker(object):
 
 
 		
-
-
 
 
 
