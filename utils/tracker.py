@@ -86,8 +86,8 @@ class Tracker(object):
 			diff_raw = np.linalg.norm(y_obs - y_detect, axis=1)
 
 
-			diff = np.minimum(diff_pred, diff_raw)
-			cost.append(diff)
+			# diff = np.minimum(diff_pred, diff_raw)
+			cost.append(diff_pred) #only use prediction
 			cost_raw.append(diff_raw)
 
 		cost = np.array(cost)*self.cost_const # help the numeric range
@@ -138,6 +138,7 @@ class Tracker(object):
 
 
 		
+
 
 
 
